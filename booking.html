@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <style>
+      body {
+        background-color: #efbc9b;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .maintitle {
+        font-size: 60px;
+        font-weight: 700;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-shadow: #d6dac8 2px;
+        outline: 2px #d6dac8;
+        color: #fbf3d5;
+        background-color: #9cafaa;
+        padding: 20px 0;
+        margin: 0;
+      }
+
+      .whole {
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .Location {
+        border: 5px groove #000;
+        background-color: #fbf3d5;
+        width: 500px;
+        padding: 20px;
+        text-align: left;
+        border-radius: 10px;
+      }
+
+      .tit {
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .local {
+        width: 100%;
+        font-size: 16px;
+        padding: 5px;
+        background-color: #d6dac8;
+        border-radius: 5px;
+        border: 1px solid #000;
+      }
+
+      .sec {
+        margin-bottom: 15px;
+      }
+
+      .person label,
+      .sec label {
+        font-size: 17px;
+        display: block;
+        margin: 5px 0;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #9cafaa;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #efbc9b;
+      }
+
+      footer {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 14px;
+        background-color: #9cafaa;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="maintitle">Booking</h1>
+    </header>
+
+    <main>
+      <div class="whole">
+        <form action="#" method="POST">
+          <fieldset class="Location">
+            <div class="sec">
+              <label for="location" class="tit">Choose a Location</label>
+              <select id="location" class="local">
+                <option value="Kannamoola">Kannamoola</option>
+                <option value="Pettah">Pettah</option>
+                <option value="Dubai">Dubai</option>
+              </select>
+            </div>
+
+            <div class="sec">
+              <label class="tit">Number of Guests</label>
+              <label
+                ><input type="radio" name="ppl" value="2" /> 2 Persons</label
+              >
+              <label
+                ><input type="radio" name="ppl" value="4" checked /> 4
+                Persons</label
+              >
+              <label
+                ><input type="radio" name="ppl" value="6" /> 6 Persons</label
+              >
+            </div>
+
+            <div class="sec">
+              <label class="tit">Choose the Type</label>
+              <label
+                ><input type="radio" name="place" value="Indoor" />
+                Indoor</label
+              >
+              <label
+                ><input type="radio" name="place" value="Outdoor" />
+                Outdoor</label
+              >
+            </div>
+
+            <button type="submit">BOOK</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Achu</p>
+    </footer>
+  </body>
+</html>
